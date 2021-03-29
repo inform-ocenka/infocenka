@@ -18,11 +18,11 @@ def delete_from_armr_db(
                 ssh_username=tunnel_params['ssh_username'],
                 ssh_pkey=tunnel_params['ssh_pkey'],
                 ssh_port = tunnel_params['ssh_port'],
-                remote_bind_address=('127.0.0.1', 5432)) as tunnel:
+                remote_bind_address=tunnel_params['remote_bind_address']) as tunnel:
             conn = psycopg2.connect(
                         host=conn_params['host'],
                         database= conn_params['database'],
-                        user=conn_params['ocenka'],
+                        user=conn_params['user'],
                         password=conn_params['password'],
                         port = tunnel.local_bind_port)
             cur = conn.cursor()
@@ -121,7 +121,7 @@ def add_to_inform_ocenka_all(tunnel_params,conn_params, data):
             conn = psycopg2.connect(
                         host=conn_params['host'],
                         database= conn_params['database'],
-                        user=conn_params['ocenka'],
+                        user=conn_params['user'],
                         password=conn_params['password'],
                         port = tunnel.local_bind_port)
             postgres_insert_query = f"""INSERT INTO valuation.inform_ocenka_all
