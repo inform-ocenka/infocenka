@@ -8,10 +8,10 @@ requirements = []
 
 setup(
     name="infocenka",
-    version="0.0.1",
+    version="0.0.2",
     author="Arman Hakobyan",
     author_email="armhakobyan1997@mail.ru",
-    description="A package to convert your Jupyter Notebook",
+    description="Package for inform-ocenka.",
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://github.com/inform-ocenka/infocenka.git",
