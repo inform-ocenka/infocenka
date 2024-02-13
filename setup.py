@@ -11,7 +11,11 @@ setup(
     version="0.0.3",
     author="Arman Hakobyan",
     author_email="armhakobyan1997@mail.ru",
+<<<<<<< HEAD
     description="Package for inform-ocenka.",
+=======
+    description="Package for inform-ocenka",
+>>>>>>> 38ee6f030a42da14a36ecad9ba8ab8a8950f7c97
     long_description=readme,
     long_description_content_type="text/markdown",
     url="https://github.com/inform-ocenka/infocenka.git",
