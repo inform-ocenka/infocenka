@@ -1,5 +1,4 @@
 import requests
-import os
 import json
 def get_district_and_coords_by_address(address):
     try:

@@ -17,7 +17,7 @@ CBR_PATH = os.path.join(MODULE_DIR, 'Models/CatBoost/Catboost_model_cat_features
 
 COORD_PATH = os.path.join(MODULE_DIR, 'Models/russian_city_geos.xlsx')
 
-ID_CITY_DICT = os.path.join(MODULE_DIR, 'helpers\\spravochnik\\id_city_dict.json')#knn_pickle1
+ID_CITY_DICT = os.path.join(MODULE_DIR, 'helpers/spravochnik/id_city_dict.json')#knn_pickle1
 ID_METRO_DICT = os.path.join(MODULE_DIR, 'helpers/spravochnik/id_metro_dict.json')#RandomForestRegressor
 ID_DISTRICT_DICT = os.path.join(MODULE_DIR, 'helpers/spravochnik/id_district_dict.json')
 ID_STEN_DICT = os.path.join(MODULE_DIR, 'helpers/spravochnik/id_sten_dict.json')
@@ -41,7 +41,6 @@ with open(KNN_PATH, 'rb') as f:
     KNN = pickle.load(f)
 CBR = CatBoost()
 CBR.load_model(CBR_PATH)
-
 def preprocessing1(df, city = 'Нижний Новгород'):
     df.drop('Город',axis=1, inplace=True)
     print(df.shape)

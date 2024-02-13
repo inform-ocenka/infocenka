@@ -8,7 +8,7 @@ requirements = []
 
 setup(
     name="infocenka",
-    version="0.0.2",
+    version="0.0.3",
     author="Arman Hakobyan",
     author_email="armhakobyan1997@mail.ru",
     description="Package for inform-ocenka.",
