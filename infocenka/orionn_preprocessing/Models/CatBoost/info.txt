@@ -1,5 +1,0 @@
-модель nn_appartment_model обучалаь на данных \\host\obmen\ОБМЕН\local_Arman\!Арман\ARM (Igor Lvovich)\Json Orionn\data\stage_save\stage1.csv
-кол-во обучающей/тестовой выборки - 6113/1529
-MdAPE обуч/тест - 0.046 / 0.064
-
-4-fold cross validattion train_test MdAPE/std - 0.068 / 0.096
